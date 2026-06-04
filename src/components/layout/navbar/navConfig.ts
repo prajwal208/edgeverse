@@ -31,7 +31,7 @@ export const NAV_MEGA_MENUS: NavMegaMenuConfig[] = [
     key: "technology",
     label: "Product",
     heading: "Product",
-    tagline: "Edge-native AI for safer, smarter mobility",
+    tagline: "Edge-native AI for smarter systems",
     columns: [
       [
         {

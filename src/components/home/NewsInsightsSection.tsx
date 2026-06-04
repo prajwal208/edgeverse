@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import styles from './newsInsightsSection.module.scss'
 import newsFeature1 from '../../assets/images/news-feature-1.png'
 import newsFeature2 from '../../assets/images/news-feature-2.png'
@@ -8,6 +7,9 @@ import newsSmall2 from '../../assets/images/news-small-2.png'
 import newsSmall3 from '../../assets/images/news-small-3.png'
 import { getPublicBlogs } from '../../api/blogs'
 import type { Blog } from '../../types/models'
+
+const LINKEDIN_NEWS_URL =
+  'https://www.linkedin.com/feed/update/urn:li:activity:7449373139903381504/'
 
 type NewsItem = {
   id: string
@@ -24,7 +26,7 @@ const FALLBACK_ITEMS: NewsItem[] = [
     title: 'EdgeVerse raises pre-seed $2.5M to bring AI to any vehicle across the globe.',
     imageSrc: newsFeature1,
     imageAlt: 'Motorcycle with perception HUD overlay',
-    href: '/blog',
+    href: LINKEDIN_NEWS_URL,
     variant: 'featured',
   },
   {
@@ -32,7 +34,7 @@ const FALLBACK_ITEMS: NewsItem[] = [
     title: 'How EdgeVerse is using edge AI to make Indian roads safer for everyone.',
     imageSrc: newsFeature2,
     imageAlt: 'Busy Indian street with AI vehicle detection',
-    href: '/blog',
+    href: LINKEDIN_NEWS_URL,
     variant: 'featured',
   },
   {
@@ -40,7 +42,7 @@ const FALLBACK_ITEMS: NewsItem[] = [
     title: 'The Deep-tech startup building a first-of-its-kind AI for Indian roads.',
     imageSrc: newsSmall1,
     imageAlt: 'Highway with connected vehicle network overlay',
-    href: '/blog',
+    href: LINKEDIN_NEWS_URL,
     variant: 'solid',
   },
   {
@@ -48,7 +50,7 @@ const FALLBACK_ITEMS: NewsItem[] = [
     title: 'EdgeVerse scales to any road, for any vehicle, for any environment.',
     imageSrc: newsSmall2,
     imageAlt: 'Motorcycle HUD in urban night traffic',
-    href: '/blog',
+    href: LINKEDIN_NEWS_URL,
     variant: 'standard',
   },
   {
@@ -56,7 +58,7 @@ const FALLBACK_ITEMS: NewsItem[] = [
     title: "EdgeVerse's road safety revolution: From Indian cities to the rest of the world.",
     imageSrc: newsSmall3,
     imageAlt: 'Pedestrian safety detection at a city crosswalk',
-    href: '/blog',
+    href: LINKEDIN_NEWS_URL,
     variant: 'standard',
   },
 ]
@@ -69,7 +71,7 @@ function toNewsItems(blogs: Blog[]): NewsItem[] {
     title: b.title,
     imageSrc: b.coverImage || PLACEHOLDERS[idx % PLACEHOLDERS.length],
     imageAlt: b.title,
-    href: `/blog/${b.slug}`,
+    href: LINKEDIN_NEWS_URL,
     variant: idx < 2 ? 'featured' : idx === 2 ? 'solid' : 'standard',
   }))
 }
@@ -99,7 +101,13 @@ const NewsInsightsSection = () => {
 
         <div className={styles.featuredGrid}>
           {featured.map((item) => (
-            <Link key={item.id} className={styles.featuredCard} to={item.href}>
+            <a
+              key={item.id}
+              className={styles.featuredCard}
+              href={LINKEDIN_NEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className={styles.featuredMedia}>
                 {item.imageSrc && (
                   <img
@@ -117,18 +125,20 @@ const NewsInsightsSection = () => {
                   Read more <span aria-hidden="true">→</span>
                 </span>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
 
         <div className={styles.compactGrid}>
           {compact.map((item) => (
-            <Link
+            <a
               key={item.id}
               className={`${styles.compactCard} ${
                 item.variant === 'solid' ? styles.compactCardSolid : ''
               }`}
-              to={item.href}
+              href={LINKEDIN_NEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {item.variant !== 'solid' && item.imageSrc && (
                 <div className={styles.compactMedia}>
@@ -147,7 +157,7 @@ const NewsInsightsSection = () => {
                   Read more <span aria-hidden="true">→</span>
                 </span>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </div>

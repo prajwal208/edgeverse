@@ -2,7 +2,7 @@ import styles from './home.module.scss'
 import heroImage from '../../assets/images/hero-intersection.png'
 import ScrollRevealIntro from '../../components/home/ScrollRevealIntro'
 import BuildWithCardsSection from '../../components/home/BuildWithCardsSection'
-import FeatureTabsSection from '../../components/home/FeatureTabsSection'
+// import FeatureTabsSection from '../../components/home/FeatureTabsSection'
 import HomeInvestorsSection from '../../components/home/HomeInvestorsSection'
 import NewsInsightsSection from '../../components/home/NewsInsightsSection'
 import LifeSavingCtaSection from '../../components/home/LifeSavingCtaSection'
@@ -24,7 +24,7 @@ const Home = () => {
             <span className={styles.heroTitleLineAccent}>One Intelligence Layer.</span>
           </h1>
           <span className={styles.heroRule} aria-hidden="true" />
-          <a className={styles.heroCta} href="/technology">
+          <a className={styles.heroCta} href="/product">
             <span>Discover more</span>
             <span className={styles.heroCtaArrow} aria-hidden="true">
               →
@@ -39,7 +39,7 @@ const Home = () => {
         <BuildWithCardsSection />
       </div>
 
-      <FeatureTabsSection />
+      {/* <FeatureTabsSection /> */}
       <HomeInvestorsSection />
       <NewsInsightsSection />
       <LifeSavingCtaSection />

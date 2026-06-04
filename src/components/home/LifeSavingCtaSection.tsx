@@ -9,8 +9,8 @@ const LifeSavingCtaSection = () => {
             Let&apos;s make roads <span className={styles.accent}>safer together.</span>
           </h2>
           <p className={styles.text}>
-            Whether you&apos;re an OEM, Tier-1 supplier, or mobility partner — EdgeVerse
-            perception intelligence integrates into any vehicle, anywhere in the world.
+            Whether you&apos;re an OEM, Tier-1 supplier - EdgeVerse
+            perception intelligence integrates into any edge device.
           </p>
         </div>
 

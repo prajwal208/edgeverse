@@ -81,9 +81,16 @@ const Footer = () => {
           </div>
 
           <address className={styles.address}>
-            G01, #520, 8th Cross BEML Layout,
-            <br />
-            Thubarahalli, Bengaluru, Karnataka 560066
+            <span className={styles.addressBlock}>
+              <strong className={styles.addressLabel}>Registered Office:</strong>
+              {' '}
+              G01, #520, 8th Cross BEML Layout, Thubarahalli, Bengaluru, Karnataka 560066
+            </span>
+            <span className={styles.addressBlock}>
+              <strong className={styles.addressLabel}>Corporate Office:</strong>
+              {' '}
+              5th Floor, Mpark, 32/1, Sonnenahalli, Doddanekundi Industrial Area, Mahadevapura Post, Bengaluru- 560048
+            </span>
           </address>
         </div>
       </div>

@@ -8,6 +8,7 @@ const PARTNER_LOGOS = [
   { name: 'NVIDIA', variant: 'nvidia' },
   { name: 'Valeo', variant: 'valeo' },
   { name: 'Bosch', variant: 'default' },
+  { name: 'ArtPark ', variant: 'default' },
 ] as const
 
 type LogoVariant = (typeof PARTNER_LOGOS)[number]['variant']

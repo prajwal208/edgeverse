@@ -10,10 +10,21 @@ const INTRO_WORDS: IntroWord[] = [
   { text: 'EdgeVerse' },
   { text: 'is' },
   { text: 'building' },
-  { text: 'a' },
-  { text: 'general-purpose' },
-  { text: 'perception' },
-  { text: 'intelligence' },
+  { text: 'vertically' },
+  { text: 'integrated' },
+  { text: 'Perception' },
+  { text: 'Intelligence' },
+  { text: 'Stack' },
+  { text: 'based' },
+  { text: 'on' },
+  { text: 'computer' },
+  { text: 'vision' },
+  { text: 'and' },
+  { text: 'radar,' },
+  { text: 'optimized' },
+  { text: 'for' },
+  { text: 'edge' },
+  { text: 'silicon' },
   { text: 'that' },
   { text: 'learns' },
   { text: 'from' },
@@ -22,22 +33,22 @@ const INTRO_WORDS: IntroWord[] = [
   { text: 'scales' },
   { text: 'across' },
   { text: 'vehicles,' },
-  { text: 'geographies,' },
+  { text: 'geographies' },
   { text: 'and' },
   { text: 'applications.', accent: true },
 ]
 
-/** Brand spectrum (navbar underline + EdgeVerse teal) */
+/** Warm amber → teal (distinct from Wayve's purple/violet/cool-blue spectrum) */
 const GRADIENT_STOPS = [
-  { r: 124, g: 58, b: 237 }, // #7c3aed
-  { r: 99, g: 102, b: 241 }, // #6366f1
-  { r: 56, g: 189, b: 248 }, // #38bdf8
-  { r: 14, g: 165, b: 164 }, // #0ea5a4
-  { r: 15, g: 23, b: 42 }, // #0f172a
+  { r: 217, g: 119, b: 6 }, // #d97706 amber-600
+  { r: 245, g: 158, b: 11 }, // #f59e0b amber-500
+  { r: 20, g: 184, b: 166 }, // #14b8a6 teal-500
+  { r: 14, g: 165, b: 164 }, // #0ea5a4 teal-500
+  { r: 15, g: 118, b: 110 }, // #0f766e teal-700
 ] as const
 
-const MUTED = { r: 15, g: 23, b: 42, a: 0.18 }
-const ACCENT_TARGET = { r: 13, g: 148, b: 136 } // deeper teal when fully revealed
+const MUTED = { r: 148, g: 163, b: 184, a: 0.28 }
+const ACCENT_TARGET = { r: 217, g: 119, b: 6 } // amber accent when fully revealed
 
 function mix(a: number, b: number, t: number) {
   return a + (b - a) * t
