@@ -7,9 +7,7 @@ const TechStackIntroSection = () => {
       <div className={styles.inner}>
         <div className={styles.header}>
           <h2 className={styles.title}>
-            Full-stack edge AI architecture
-            <br />
-            for real-world perception
+          Perceiva ARAS
           </h2>
           <p className={styles.lead}>
             EdgeVerse specializes in building AI perception models for two-wheelers. Our technology

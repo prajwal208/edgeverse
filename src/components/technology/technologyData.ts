@@ -114,15 +114,15 @@ export const TECH_CAPABILITY_CARDS = [
 ] as const
 
 export const TECH_STACK_ROWS = [
-  {
-    title: 'Imedge® Hardware',
-    description:
-      'A compact, weather-sealed device housing the Ambarella CV25 vision processor, 5MP camera module, and custom optics.\nPurpose-built for vibration-heavy two-wheeler environments where reliability is non-negotiable.',
-    href: '/technology#imedge',
-    image: imedgeHardware,
-    imageAlt: 'Imedge hardware PCB with Ambarella CV25 vision processor',
-    theme: 'light' as const,
-  },
+  // {
+  //   title: 'Imedge® Hardware',
+  //   description:
+  //     'A compact, weather-sealed device housing the Ambarella CV25 vision processor, 5MP camera module, and custom optics.\nPurpose-built for vibration-heavy two-wheeler environments where reliability is non-negotiable.',
+  //   href: '/technology#imedge',
+  //   image: imedgeHardware,
+  //   imageAlt: 'Imedge hardware PCB with Ambarella CV25 vision processor',
+  //   theme: 'light' as const,
+  // },
   {
     title: 'Perceiva™ Software',
     description:

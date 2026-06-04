@@ -2,8 +2,7 @@
 .scrollSection {
   position: relative;
   min-height: 52vh;
-  padding-top: clamp(12px, 2vh, 24px);
-  padding-bottom: 0;
+  padding-inline: var(--home-section-x, clamp(16px, 5vw, 72px));
   background: #ffffff;
 }
 
@@ -24,7 +23,6 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 clamp(24px, 5vw, 72px);
   will-change: transform;
   text-align: center;
 }
@@ -50,8 +48,7 @@
 
 @media (max-width: 819px) {
   .scrollSection {
-    min-height: 58vh;
-    padding-top: clamp(8px, 1.5vh, 16px);
+    min-height: 48vh;
   }
 
   .sticky {
@@ -67,7 +64,6 @@
 @media (prefers-reduced-motion: reduce) {
   .scrollSection {
     min-height: auto;
-    padding-bottom: clamp(32px, 5vh, 48px);
   }
 
   .word {

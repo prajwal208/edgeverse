@@ -1,10 +1,12 @@
 .page {
   background: #ffffff;
   color: #0f172a;
+  --home-section-gap: clamp(40px, 8vw, 64px);
+  --home-section-x: clamp(16px, 5vw, 72px);
 }
 
-.introCardsSpacer {
-  margin-top: clamp(-72px, -8vh, -48px);
+.page > * + * {
+  margin-top: var(--home-section-gap);
 }
 
 .hero {
@@ -41,7 +43,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 clamp(20px, 5vw, 72px) clamp(48px, 8vh, 96px);
+  padding: 0 var(--home-section-x) clamp(48px, 8vh, 96px);
 }
 
 .heroTitle {
@@ -109,6 +111,11 @@
 }
 
 @media (max-width: 819px) {
+  .page {
+    --home-section-gap: clamp(32px, 7vw, 48px);
+    --home-section-x: 20px;
+  }
+
   .heroContent {
     text-align: left;
   }
@@ -119,5 +126,12 @@
 
   .heroTitleLineAccent {
     font-size: clamp(17px, 4.6vw, 30px);
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    --home-section-gap: 32px;
+    --home-section-x: 16px;
   }
 }

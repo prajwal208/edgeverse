@@ -1,7 +1,6 @@
 .section {
   background: #ffffff;
-  padding: 0 clamp(24px, 5vw, 72px) clamp(96px, 12vw, 160px);
-  margin-top: 0;
+  padding-inline: var(--home-section-x, clamp(16px, 5vw, 72px));
 }
 
 .grid {
@@ -175,11 +174,6 @@
 }
 
 @media (max-width: 480px) {
-  .section {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
   .grid {
     width: 100%;
   }

@@ -12,7 +12,7 @@ const AboutHeroSection = () => {
       <div className={styles.inner}>
         <div className={styles.kicker}>ABOUT US</div>
         <h1 className={styles.heading}>
-          Building the future<br />of perception.
+        Reducing entry-barrier for edge intelligence
         </h1>
         <p className={styles.subtitle}>
           EdgeVerse is a vertically integrated edge AI company

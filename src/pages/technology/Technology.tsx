@@ -23,11 +23,11 @@ const Technology = () => {
       <TechHeroSection />
       <TechStackIntroSection />
       <TechApproachSection />
-      <TechAdvantagesSection />
+      {/* <TechAdvantagesSection /> */}
       <TechFleetLearningSection />
       <TechFleetAdvantagesSection />
-      <TechCapabilityCardsSection />
-      <TechStackRowsSection />
+      {/* <TechCapabilityCardsSection /> */}
+      {/* <TechStackRowsSection /> */}
     </main>
   )
 }

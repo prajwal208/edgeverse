@@ -10,9 +10,7 @@ const TechHeroSection = () => {
       <div className={styles.inner}>
         <div className={styles.badge}>Technology</div>
         <h1 className={styles.heading}>
-          Pioneering edge AI for
-          <br />
-          perception.
+        We are your Co-Development Partner
         </h1>
         <p className={styles.subtitle}>
           A vertically integrated hardware + software + AI platform

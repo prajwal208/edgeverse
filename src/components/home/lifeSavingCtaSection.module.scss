@@ -1,12 +1,12 @@
 .section {
   background: #ffffff;
   border-top: 1px solid rgba(15, 23, 42, 0.06);
+  padding-inline: var(--home-section-x, clamp(16px, 5vw, 72px));
 }
 
 .inner {
   max-width: 1440px;
   margin: 0 auto;
-  padding: clamp(48px, 6vw, 72px) clamp(20px, 5vw, 72px);
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;

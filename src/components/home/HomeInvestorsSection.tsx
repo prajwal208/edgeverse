@@ -1,12 +1,12 @@
 import styles from './homeInvestorsSection.module.scss'
 
 const PARTNER_LOGOS = [
-  { name: 'AMD', variant: 'amd' },
-  { name: 'arm', variant: 'arm' },
-  { name: 'Ambarella', variant: 'default' },
-  { name: 'Qualcomm', variant: 'default' },
-  { name: 'NVIDIA', variant: 'nvidia' },
-  { name: 'Valeo', variant: 'valeo' },
+  // { name: 'AMD', variant: 'amd' },
+  // { name: 'arm', variant: 'arm' },
+  // { name: 'Ambarella', variant: 'default' },
+  // { name: 'Qualcomm', variant: 'default' },
+  // { name: 'NVIDIA', variant: 'nvidia' },
+  // { name: 'Valeo', variant: 'valeo' },
   { name: 'Bosch', variant: 'default' },
   { name: 'ArtPark ', variant: 'default' },
 ] as const
@@ -14,10 +14,10 @@ const PARTNER_LOGOS = [
 type LogoVariant = (typeof PARTNER_LOGOS)[number]['variant']
 
 const variantClass: Record<LogoVariant, string | undefined> = {
-  amd: styles.logoAmd,
-  arm: styles.logoArm,
-  nvidia: styles.logoNvidia,
-  valeo: styles.logoValeo,
+  // amd: styles.logoAmd,
+  // arm: styles.logoArm,
+  // nvidia: styles.logoNvidia,
+  // valeo: styles.logoValeo,
   default: undefined,
 }
 

@@ -35,9 +35,7 @@ const Home = () => {
 
       <ScrollRevealIntro />
 
-      <div className={styles.introCardsSpacer}>
-        <BuildWithCardsSection />
-      </div>
+      <BuildWithCardsSection />
 
       {/* <FeatureTabsSection /> */}
       <HomeInvestorsSection />
